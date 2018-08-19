@@ -9,6 +9,8 @@
 * [final关键字](finalguan-jian-zi.md)
 * [hashCode 与 equals](hashcode-yu-equals.md)
 * [述线程，程序、进程的基本概念。以及他们之间关系是什么？](shu-xian-cheng-ff0c-cheng-xu-3001-jin-cheng-de-ji-ben-gai-nian-3002-yi-ji-ta-men-zhi-jian-guan-xi-shi-shi-yao-ff1f.md)
+* [线程有哪些基本状态？这些状态是如何定义的?](xian-cheng-you-na-xie-ji-ben-zhuang-tai-ff1f-zhe-xie-zhuang-tai-shi-ru-he-ding-yi-76843f.md)
+* [字符型常量和字符串常量的区别](zi-fu-xing-chang-liang-he-zi-fu-chuan-chang-liang-de-qu-bie.md)
 
 ## java集合框架学习
 
