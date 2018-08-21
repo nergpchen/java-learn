@@ -12,6 +12,11 @@
 * [线程有哪些基本状态？这些状态是如何定义的?](xian-cheng-you-na-xie-ji-ben-zhuang-tai-ff1f-zhe-xie-zhuang-tai-shi-ru-he-ding-yi-76843f.md)
 * [字符型常量和字符串常量的区别](zi-fu-xing-chang-liang-he-zi-fu-chuan-chang-liang-de-qu-bie.md)
 
+## JavaIO
+
+* [IO总结](javaio/iozong-jie.md)
+* [IO面试题](javaio/iomian-shi-ti.md)
+
 ## java集合框架学习
 
 * [List，Set,Map三者的区别及总结](javaji-he-kuang-jia-xue-xi/listsetmapsan-zhe-de-qu-bie-ji-zong-jie.md)
