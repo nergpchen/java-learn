@@ -16,11 +16,16 @@
 
 * [IO总结](javaio/iozong-jie.md)
 * [IO面试题](javaio/iomian-shi-ti.md)
+* [磁盘 I/O 工作机制](javaio/ci-pan-i-o-gong-zuo-ji-zhi.md)
+* [IO调优](javaio/iodiao-you.md)
+* [NIO和IO主要差别](javaio/niohe-io-zhu-yao-cha-bie.md)
 
 ## java集合框架学习
 
 * [List，Set,Map三者的区别及总结](javaji-he-kuang-jia-xue-xi/listsetmapsan-zhe-de-qu-bie-ji-zong-jie.md)
 * [final关键字](javaji-he-kuang-jia-xue-xi/11.md)
+
+## NIO
 
 ## 多线程
 
