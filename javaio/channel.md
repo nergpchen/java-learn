@@ -14,13 +14,13 @@
    * transferTo\(\) :transferTo方法把FileChannel数据传输到另一个channel
 7. Java NIO中最重要的几个Channel的实现：
 
-   * **FileChannel：** 用于文件的数据读写
+   * **FileChannel：** 用于文件的数据读写
 
-   * **DatagramChannel：** 用于UDP的数据读写
+   * **DatagramChannel：** 用于UDP的数据读写
 
-   * **SocketChannel：** 用于TCP的数据读写，一般是客户端实现
+   * **SocketChannel：** 用于TCP的数据读写，一般是客户端实现
 
-   * **ServerSocketChannel:** 允许我们监听TCP链接请求，每个请求会创建会一个SocketChannel，一般是服务器实现
+   * **ServerSocketChannel:** 允许我们监听TCP链接请求，每个请求会创建会一个SocketChannel，一般是服务器实现
 
 **使用FileChannel读取数据到Buffer（缓冲区）以及利用Buffer（缓冲区）写入数据到FileChannel：**
 
@@ -66,52 +66,52 @@ FileChannel
 
 
 public
- 
+
 class
- 
+
 FileChannelTxt
- 
+
 {
 
-    
+
 public
- 
+
 static
- 
+
 void
  main
 (
 String
  args
 [])
- 
+
 throws
- 
+
 IOException
- 
+
 {
 
-        
+
 //1.创建一个RandomAccessFile（随机访问文件）对象，
 
-        
+
 RandomAccessFile
  raf
 =
 new
- 
+
 RandomAccessFile
 (
 "D:\\niodata.txt"
 ,
- 
+
 "rw"
 );
 
-        
+
 //通过RandomAccessFile对象的getChannel()方法。FileChannel是抽象类。
 
-        
+
 FileChannel
  inChannel
 =
@@ -120,10 +120,10 @@ raf
 getChannel
 ();
 
-        
+
 //2.创建一个读数据缓冲区对象
 
-        
+
 ByteBuffer
  buf
 =
@@ -134,10 +134,10 @@ allocate
 48
 );
 
-        
+
 //3.从通道中读取数据
 
-        
+
 int
  bytesRead 
 =
@@ -148,10 +148,10 @@ read
 buf
 );
 
-        
+
 //创建一个写数据缓冲区对象
 
-        
+
 ByteBuffer
  buf2
 =
@@ -162,7 +162,7 @@ allocate
 48
 );
 
-        
+
 //写入数据
 
         buf2
@@ -186,21 +186,21 @@ write
 buf
 );
 
-        
+
 while
- 
+
 (
 bytesRead 
 !=
- 
+
 -
 1
 )
- 
+
 {
 
 
-            
+
 System
 .
 out
@@ -208,12 +208,12 @@ out
 println
 (
 "Read "
- 
+
 +
  bytesRead
 );
 
-            
+
 //Buffer有两种模式，写模式和读模式。在写模式下调用flip()之后，Buffer从写模式变成读模式。
 
             buf
@@ -221,21 +221,21 @@ println
 flip
 ();
 
-           
+
 //如果还有未读内容
 
-            
+
 while
- 
+
 (
 buf
 .
 hasRemaining
 ())
- 
+
 {
 
-                
+
 System
 .
 out
@@ -249,10 +249,10 @@ char
 get
 ());
 
-            
+
 }
 
-            
+
 //清空缓存区
 
             buf
@@ -269,10 +269,10 @@ read
 buf
 );
 
-        
+
 }
 
-        
+
 //关闭RandomAccessFile（随机访问文件）对象
 
         raf
@@ -280,11 +280,34 @@ buf
 close
 ();
 
-    
+
 }
 
 }
 ```
 
+
+
+## 三 SocketChannel和ServerSocketChannel的使用
+
+**利用SocketChannel和ServerSocketChannel实现客户端与服务器端简单通信：**
+
+**SocketChannel** 用于创建基于tcp协议的客户端对象，因为SocketChannel中不存在accept\(\)方法，所以，它不能成为一个服务端程序。通过 **connect\(\)方法** ，SocketChannel对象可以连接到其他tcp服务器程序。
+
+客户端:
+
+```
+
+```
+
+**ServerSocketChannel** 允许我们监听TCP链接请求，通过ServerSocketChannelImpl的 **accept\(\)方法** 可以创建一个SocketChannel对象用户从客户端读/写数据。
+
+服务端：
+
+```
+
+```
+
+  
 
 

@@ -23,7 +23,8 @@
 * [学习资料](javaio/xue-xi-zi-liao.md)
 * [Buffer](javaio/buffer.md)
 * [Channel](javaio/channel.md)
-* [Selector](javaio/selector.md)
+* [NIO学习总结以及NIO新特性介绍](javaio/nioxue-xi-zong-jie-yi-ji-nio-xin-te-xing-jie-shao.md)
+* [Selector学习](javaio/selectorxue-xi.md)
 
 ## java集合框架学习
 
