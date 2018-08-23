@@ -21,6 +21,9 @@
 * [NIO和IO主要差别](javaio/niohe-io-zhu-yao-cha-bie.md)
 * [NIO基本概念](javaio/nioji-ben-gai-nian.md)
 * [学习资料](javaio/xue-xi-zi-liao.md)
+* [Buffer](javaio/buffer.md)
+* [Channel](javaio/channel.md)
+* [Selector](javaio/selector.md)
 
 ## java集合框架学习
 
