@@ -35,6 +35,7 @@
 * [ConcurrentHashMap实现原理及源码分析](javaji-he-kuang-jia-xue-xi/concurrenthashmapshi-xian-yuan-li-ji-yuan-ma-fen-xi.md)
 * [集合总结](javaji-he-kuang-jia-xue-xi/ji-he-zong-jie.md)
 * [学习资料](javaji-he-kuang-jia-xue-xi/xue-xi-zi-liao.md)
+* [ArrayList学习](javaji-he-kuang-jia-xue-xi/arraylistxue-xi.md)
 
 ## 多线程
 
