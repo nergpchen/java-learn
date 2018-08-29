@@ -43,4 +43,8 @@
 * [使用多线程方式](duo-xian-cheng/shi-yong-duo-xian-cheng-fang-shi.md)
 * [synchronized关键字学习](duo-xian-cheng/synchronizedguan-jian-zi-xue-xi.md)
 * [volatile](duo-xian-cheng/volatile.md)
+* [等待/通知机制介绍](duo-xian-cheng/deng-5f85-tong-zhi-ji-zhi-jie-shao.md)
+* [Lock学习](duo-xian-cheng/lockxue-xi.md)
+  * [Condition接口简介](duo-xian-cheng/lockxue-xi/conditionjie-kou-jian-jie.md)
+  * [公平锁与非公平锁](duo-xian-cheng/lockxue-xi/gong-ping-suo-yu-fei-gong-ping-suo.md)
 
