@@ -41,4 +41,6 @@
 
 * [多线程基本知识](duo-xian-cheng/duo-xian-cheng.md)
 * [使用多线程方式](duo-xian-cheng/shi-yong-duo-xian-cheng-fang-shi.md)
+* [synchronized关键字学习](duo-xian-cheng/synchronizedguan-jian-zi-xue-xi.md)
+* volatile
 
