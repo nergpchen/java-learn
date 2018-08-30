@@ -50,4 +50,5 @@
   * [读写锁](duo-xian-cheng/lockxue-xi/du-xie-suo.md)
 * [线程池](duo-xian-cheng/xian-cheng-chi.md)
   * [线程池排队策略](duo-xian-cheng/xian-cheng-chi/xian-cheng-chi-pai-dui-ce-lve.md)
+  * [拒绝策略](duo-xian-cheng/xian-cheng-chi/ju-jue-ce-lve.md)
 
