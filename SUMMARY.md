@@ -52,4 +52,5 @@
   * [线程池排队策略](duo-xian-cheng/xian-cheng-chi/xian-cheng-chi-pai-dui-ce-lve.md)
   * [拒绝策略](duo-xian-cheng/xian-cheng-chi/ju-jue-ce-lve.md)
   * [ThreadPoolExecutor类](duo-xian-cheng/xian-cheng-chi/threadpoolexecutorlei.md)
+  * [如何分配线程池大小](duo-xian-cheng/xian-cheng-chi/ru-he-fen-pei-xian-cheng-chi-da-xiao.md)
 
