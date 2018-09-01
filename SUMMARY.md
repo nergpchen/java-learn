@@ -54,4 +54,5 @@
   * [ThreadPoolExecutor类](duo-xian-cheng/xian-cheng-chi/threadpoolexecutorlei.md)
   * [如何分配线程池大小](duo-xian-cheng/xian-cheng-chi/ru-he-fen-pei-xian-cheng-chi-da-xiao.md)
 * [阻塞队列](duo-xian-cheng/zu-sai-dui-lie.md)
+  * [阻塞队列实现原理-ArrayBlockQueue](duo-xian-cheng/zu-sai-dui-lie/zu-sai-dui-lie-shi-xian-yuan-7406-arrayblockqueue.md)
 
