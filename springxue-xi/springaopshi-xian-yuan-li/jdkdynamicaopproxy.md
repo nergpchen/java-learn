@@ -6,37 +6,29 @@ Spring提供了两种方式来生成代理对象: JDKProxy和Cglib，具体使�
 
 Spring提供了JdkDynamicAopProxy这个来实现动态代理技术，动态代理技术的核心是字节码增强技术，也就是在运行期间可以修改Class文件.
 
-  
-
-
-接口：
+代码:
 
 final class JdkDynamicAopProxy implements AopProxy, InvocationHandler, Serializable
 
-是一个final类，不可被继承
-
-实现了
-
-AopProxy和InvocationHandler两个接口。
+是一个final类，不可被继承 实现了 AopProxy和InvocationHandler两个接口。
 
 AopProxy用来指定一个代理类
 
 InvocationHandler:每个代理类都有一个相应的InvocationHandler用来实现增强功能。
 
-  
 
 
 AOP接口实现：
 
 public Object getProxy\(ClassLoader classLoader\) {
 
- if \(logger.isDebugEnabled\(\)\) {
+if \(logger.isDebugEnabled\(\)\) {
 
 logger.debug\("Creating JDK dynamic proxy: target source is " + this.advised.getTargetSource\(\)\);
 
- }
+}
 
- Class
+Class
 
 &lt;
 
@@ -46,9 +38,9 @@ logger.debug\("Creating JDK dynamic proxy: target source is " + this.advised.get
 
 \[\] proxiedInterfaces = AopProxyUtils.completeProxiedInterfaces\(this.advised\);
 
- findDefinedEqualsAndHashCodeMethods\(proxiedInterfaces\);
+findDefinedEqualsAndHashCodeMethods\(proxiedInterfaces\);
 
- return Proxy.newProxyInstance\(classLoader, proxiedInterfaces, this\);
+return Proxy.newProxyInstance\(classLoader, proxiedInterfaces, this\);
 
 }
 
