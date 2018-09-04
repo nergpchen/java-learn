@@ -62,4 +62,5 @@
   * [AOP介绍](springxue-xi/springaopshi-xian-yuan-li/aopjie-shao.md)
   * [JdkDynamicAopProxy](springxue-xi/springaopshi-xian-yuan-li/jdkdynamicaopproxy.md)
 * [学习资料](springxue-xi/xue-xi-zi-liao.md)
+* [使用SpringAOP](springxue-xi/shi-yongspringaop.md)
 
