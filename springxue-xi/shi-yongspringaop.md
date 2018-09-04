@@ -9,14 +9,11 @@
 
 * 指定是否使用CGLIB。
 
-
-
 ## 1.声明一个 aspect
 
 Aspects 类和其他任何正常的 bean 一样，除了它们将会用 @AspectJ 注释之外，它和其他类一样可能有方法和字段，如下所示：
 
 ```
-
 @Aspect
 
 public class AspectModule {
@@ -31,6 +28,125 @@ public class AspectModule {
 !-- configure properties of aspect here as normal --
 >
 </bean>
+```
+
+## 2.声明一个切入点
+
+下面的示例中定义了一个名为 ‘businessService’ 的切入点，该切入点将与 com.tutorialspoint 包下的类中可用的每一个方法相匹配：
+
+```
+import
+ org.aspectj.lang.annotation.Pointcut;
+
+@Pointcut
+(
+"execution(* com.xyz.myapp.service.*.*(..))"
+) 
+// expression 
+private
+void
+businessService
+()
+{}
+```
+
+下面的示例中定义了一个名为 ‘getname’ 的切入点，该切入点将与 com.tutorialspoint 包下的 Student 类中的 getName\(\) 方法相匹配：
+
+```
+import
+ org.aspectj.lang.annotation.Pointcut;
+
+@Pointcut
+(
+"execution(* com.tutorialspoint.Student.getName(..))"
+) 
+
+private
+void
+getname
+()
+{}
+```
+
+定义 通知
+
+你可以使用 @{ADVICE-NAME} 注释声明五个建议中的任意一个，如下所示。这假设你已经定义了一个切入点标签方法 businessService\(\)：
+
+```
+@Before
+(
+"businessService()"
+)
+
+public
+void
+doBeforeTask
+()
+{
+ ...
+}
+
+@After
+(
+"businessService()"
+)
+
+public
+void
+doAfterTask
+()
+{
+ ...
+}
+
+@AfterReturning
+(pointcut = 
+"businessService()"
+, returning=
+"retVal"
+)
+
+public
+void
+doAfterReturnningTask
+(Object retVal)
+{
+  
+// you can intercept retVal here.
+
+  ...
+}
+
+@AfterThrowing
+(pointcut = 
+"businessService()"
+, throwing=
+"ex"
+)
+
+public
+void
+doAfterThrowingTask
+(Exception ex)
+{
+  
+// you can intercept thrown exception here.
+
+  ...
+}
+
+@Around
+(
+"businessService()"
+)
+
+public
+void
+doAroundTask
+()
+{
+ ...
+}
 ```
 
 
