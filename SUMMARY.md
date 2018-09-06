@@ -66,4 +66,5 @@
 * [使用SpringAOP](springxue-xi/shi-yongspringaop.md)
 * [IOC](springxue-xi/ioc.md)
   * [IOC是什么](springxue-xi/ioc/iocshi-shi-yao.md)
+  * [SpringIOC容器介绍](springxue-xi/ioc/springioczen-yao-shi-xian.md)
 
