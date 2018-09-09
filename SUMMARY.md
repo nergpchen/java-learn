@@ -68,4 +68,10 @@
   * [IOC是什么](springxue-xi/ioc/iocshi-shi-yao.md)
   * [SpringIOC容器介绍](springxue-xi/ioc/springioczen-yao-shi-xian.md)
   * [ApplicationContext容器原理](springxue-xi/ioc/applicationcontextrong-qi-yuan-li.md)
+* [SpingMVC](springxue-xi/spingmvc.md)
+  * [学习资料](springxue-xi/spingmvc/xue-xi-zi-liao.md)
+
+## 学习资料
+
+* [Spring学习资料](xue-xi-zi-liao/springxue-xi-zi-liao.md)
 
