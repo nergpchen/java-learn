@@ -22,11 +22,9 @@ Controller控制器，是MVC中的部分C，为什么是部分呢？因为此处
 
 `@InitBinder：自定义数据绑定注册支持，用于将请求参数转换到命令对象属性的对应类型；`
 
+`三、Spring3.0引入RESTful架构风格支持(通过@PathVariable注解和一些其他特性支持),且又引入了`
 
-
-**`三、Spring3.0引入RESTful架构风格支持(通过@PathVariable注解和一些其他特性支持),且又引入了`**
-
-**`更多的注解支持：`**
+`更多的注解支持：`
 
 `@CookieValue：cookie数据到处理器功能处理方法的方法参数上的绑定；`
 
@@ -43,4 +41,12 @@ Controller控制器，是MVC中的部分C，为什么是部分呢？因为此处
 `@PathVariable：请求URI中的模板变量部分到处理器功能处理方法的方法参数上的绑定，`
 
 `从而支持RESTful架构风格的URI；`
+
+四：哪些类支持注解
+
+`RequestMappingHandlerMapping 处理@Controller`
+
+处理器适配器RequestMappingHandlerAdapter 处理@RequestMapping
+
+
 
