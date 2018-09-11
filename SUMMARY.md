@@ -71,6 +71,7 @@
 * [SpingMVC](springxue-xi/spingmvc.md)
   * [SpringMVC架构](springxue-xi/spingmvc/xue-xi-zi-liao.md)
   * [DispatcherServlet](springxue-xi/spingmvc/dispatcherservlet.md)
+  * [Controller](springxue-xi/spingmvc/controller.md)
 
 ## 学习资料
 
