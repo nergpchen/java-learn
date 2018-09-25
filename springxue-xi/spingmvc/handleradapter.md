@@ -1,0 +1,30 @@
+HandlerAdapter:
+
+HandlerAdapater是处理适配器，调用具体的方法来进行。
+
+处理它的作用用一句话概括就是调用具体的方法对用户发来的请求来进行处理。当handlerMapping获取到执行请求的controller时，DispatcherServlte会根据controller对应的controller类型来调用相应的HandlerAdapter来进行处理。 
+
+
+
+HandlerAdapter原理:
+
+1.注册:
+
+  DispatcherServlte会根据配置文件信息注册HandlerAdapter，如果在配置文件中没有配置，那么DispatcherServlte会获取HandlerAdapter的默认配置，如果是读取默认配置的话，DispatcherServlte会读取DispatcherServlte.properties文件,该文件中配置了三种HandlerAdapter：HttpRequestHandlerAdapter，SimpleControllerHandlerAdapter和AnnotationMethodHandlerAdapter。DispatcherServlte会将这三个HandlerAdapter对象存储到它的handlerAdapters这个集合属性中，这样就完成了HandlerAdapter的注册。 
+
+2.执行逻辑:
+
+DispatcherServlte会根据handlerMapping传过来的controller与已经注册好了的HandlerAdapter一一匹配，看哪一种HandlerAdapter是支持该controller类型的，如果找到了其中一种HandlerAdapter是支持传过来的controller类型，那么该HandlerAdapter会调用自己的handle方法，handle方法运用java的反射机制执行controller的具体方法来获得ModelAndView,例如SimpleControllerHandlerAdapter是支持实现了controller接口的控制器，如果自己写的控制器实现了controller接口，那么SimpleControllerHandlerAdapter就会去执行自己写控制器中的具体方法来完成请求。 --------------------- 本文来自 wangbiao007 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/wangbiao007/article/details/50547020?utm\_source=copy
+
+三：哪些适配器：
+
+  1.AnnotationMethodHandlerAdapter主要是适配注解类处理器，注解类处理器就是我们经常使用的@Controller的这类处理器   2. HttpRequestHandlerAdapter : 主要是适配静态资源处理器，静态资源处理器就是实现了HttpRequestHandler接口的处理器，这类处理器的作用是处理通过SpringMVC来访问的静态资源的请求。                
+
+ 3.SimpleControllerHandlerAdapter是Controller处理适配器，适配实现了Controller接口或Controller接口子类的处理器，比如我们经常自己写的Controller来继承MultiActionController，那么自己写的这些Controller就会由SimpleControllerHandlerAdapter来适配  4.SimpleServletHandlerAdapter是Servlet处理适配器,适配实现了Servlet接口或Servlet的子类的处理器，我们不仅可以在web.xml里面配置Servlet，其实也可以用SpringMVC来配置Servlet，不过这个适配器很少用到，而且SpringMVC默认的适配器没有他，默认的是前面的三种。
+
+
+
+
+
+
+

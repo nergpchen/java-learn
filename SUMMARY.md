@@ -72,6 +72,9 @@
   * [SpringMVC架构](springxue-xi/spingmvc/xue-xi-zi-liao.md)
   * [DispatcherServlet](springxue-xi/spingmvc/dispatcherservlet.md)
   * [Controller](springxue-xi/spingmvc/controller.md)
+    * [RequestMappingHandlerAdapter](springxue-xi/spingmvc/controller/requestmappinghandleradapter.md)
+  * [HandlerMapping](springxue-xi/spingmvc/handlermapping.md)
+  * [HandlerAdapter](springxue-xi/spingmvc/handleradapter.md)
 
 ## 学习资料
 
