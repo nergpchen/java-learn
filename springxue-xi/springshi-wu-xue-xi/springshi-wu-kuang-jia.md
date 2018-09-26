@@ -14,29 +14,28 @@ PlatformTransactionManager
 ()
 ...
 {  
-    
+
 // Return a currently active transaction or create a new one, according to the specified propagation behavior（根据指定的传播行为，返回当前活动的事务或创建一个新事务。）
 TransactionStatus getTransaction (TransactionDefinition definition)
 throws TransactionException
 ; 
-    
+
 // Commit the given transaction, with regard to its status（使用事务目前的状态提交事务）
 Void commit (TransactionStatus status)
 throws
  TransactionException
 ;  
-    
+
 // Perform a rollback of the given transaction（对执行的事务进行回滚）
 Void  rollback
 (TransactionStatus status)
 throws
  TransactionException
-;    } 
-
+;    }
 ```
 
-  
-
+DataSourceTransactionManager：  
+ DataSourceTransactionManager就是一个事务管理实现类
 
 
 

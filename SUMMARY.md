@@ -78,7 +78,9 @@
     * [RequestMappingHandlerAdapter](springxue-xi/spingmvc/handleradapter/annotationmethodhandleradapterxue-xi.md)
 * [面试题](springxue-xi/mian-shi-ti.md)
 * [Spring事务学习](springxue-xi/springshi-wu-xue-xi.md)
-  * [Spring事务框架](springxue-xi/springshi-wu-xue-xi/springshi-wu-kuang-jia.md)
+  * [PlatformTransactionManager](springxue-xi/springshi-wu-xue-xi/springshi-wu-kuang-jia.md)
+  * [TransactionDefinition](springxue-xi/springshi-wu-xue-xi/transactiondefinition.md)
+  * [TransactionStatus](springxue-xi/springshi-wu-xue-xi/transactionstatus.md)
 
 ## 学习资料
 
