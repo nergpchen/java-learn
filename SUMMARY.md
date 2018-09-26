@@ -81,6 +81,7 @@
   * [PlatformTransactionManager](springxue-xi/springshi-wu-xue-xi/springshi-wu-kuang-jia.md)
   * [TransactionDefinition](springxue-xi/springshi-wu-xue-xi/transactiondefinition.md)
   * [TransactionStatus](springxue-xi/springshi-wu-xue-xi/transactionstatus.md)
+  * [Sping声明式事务管理](springxue-xi/springshi-wu-xue-xi/spingsheng-ming-shi-shi-wu-guan-li.md)
 
 ## 学习资料
 
