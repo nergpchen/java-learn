@@ -27,23 +27,13 @@
 * **使用基于AspectJ的声明式事务管理完成转账业务**
 * **使用基于 @Transactional 的全注解方式事务管理完成转账业务**
 
-  
-
-
 作者：SnailClimb
 
-  
-
-
-链接：https://juejin.im/post/5b010f27518825426539ba38
-
-  
-
+链接：[https://juejin.im/post/5b010f27518825426539ba38](https://juejin.im/post/5b010f27518825426539ba38)
 
 来源：掘金
 
-  
-
-
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
 
