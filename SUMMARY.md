@@ -82,9 +82,22 @@
   * [TransactionDefinition](springxue-xi/springshi-wu-xue-xi/transactiondefinition.md)
   * [TransactionStatus](springxue-xi/springshi-wu-xue-xi/transactionstatus.md)
   * [Sping声明式事务管理](springxue-xi/springshi-wu-xue-xi/spingsheng-ming-shi-shi-wu-guan-li.md)
+* [Bean作用域](springxue-xi/beanzuo-yong-yu.md)
 
 ## 学习资料
 
 * [Spring学习资料](xue-xi-zi-liao/springxue-xi-zi-liao.md)
-* UML画
+* [UML工具](xue-xi-zi-liao/umlhua.md)
+
+## Mybatis
+
+* [Mybatis介绍](mybatis/mybatisjie-shao.md)
+  * SqlSessionFactory
+  * SqlSessionTemplate
+  * [Mybatis缓存](mybatis/mybatisjie-shao/mybatishuan-cun.md)
+  * [Execu tor执行器](mybatis/mybatisjie-shao/execu-torzhi-xing-qi.md)
+* [MapperFactoryBean](mybatis/zhu-ru-ying-she-qi.md)
+* [MyBatis-plus框架学习](mybatis/mybatis-pluskuang-jia-xue-xi.md)
+* [学习资料](mybatis/xue-xi-zi-liao.md)
+* [Mybatis面试题](mybatis/mybatismian-shi-ti.md)
 
