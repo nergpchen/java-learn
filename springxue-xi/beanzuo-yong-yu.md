@@ -18,8 +18,6 @@ Bean作用域: 分为单例、prototype、request、session、globalSession
 
 通过 注解@Scope\("prototype"\)来声明作用域
 
-
-
 ### 二：bean的生命周期
 
 Spring Bean是Spring应用中最最重要的部分了。所以来看看Spring容器在初始化一个bean的时候会做那些事情，顺序是怎样的，在容器关闭的时候，又会做哪些事情。
@@ -37,7 +35,7 @@ public
 class
 GiraffeService
  {
-    
+
 //
 通过
 <
@@ -51,7 +49,7 @@ destroyMethod
 throws
 Exception
  {
-        
+
 System
 .
 out
@@ -62,7 +60,7 @@ println(
 "
 );
     }
-    
+
 //
 通过
 <
@@ -76,7 +74,7 @@ initMethod
 throws
 Exception
  {
-        
+
 System
 .
 out
@@ -100,8 +98,6 @@ bean name="giraffeService" class="com.giraffe.spring.service.GiraffeService" ini
 /bean
 >
 ```
-
-
 
 **3.使用@PostConstruct和@PreDestroy注解**
 
@@ -127,11 +123,11 @@ bean name="giraffeService" class="com.giraffe.spring.service.GiraffeService" ini
 * 当要销毁Bean的时候，如果Bean实现了DisposableBean接口，执行destroy\(\)方法。
 * 当要销毁Bean的时候，如果Bean在配置文件中的定义包含destroy-method属性，执行指定的方法。
 
-  
 
 
-  
 
+
+资料:https://github.com/Snailclimb/JavaGuide/blob/master/%E4%B8%BB%E6%B5%81%E6%A1%86%E6%9E%B6/SpringBean.md\#%E5%89%8D%E8%A8%80
 
 
 
