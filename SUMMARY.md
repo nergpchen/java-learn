@@ -14,6 +14,8 @@
 * JVM
   * [堆](dui.md)
   * [方法区](fang-fa-qu.md)
+  * [运行时常量](yun-xing-shi-chang-liang.md)
+  * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
 
 ## JavaIO
 
@@ -111,4 +113,9 @@
 * [树](shu-ju-jie-gou/shu.md)
   * [二叉树](shu-ju-jie-gou/shu/er-cha-shu.md)
 * [学习资料](shu-ju-jie-gou/xue-xi-zi-liao.md)
+
+## 编程思维
+
+* [编程前思考的问题](bian-cheng-si-wei/bian-cheng-qian-si-kao-de-wen-ti.md)
+* [提高效率工具](bian-cheng-si-wei/ti-gao-xiao-lv-gong-ju.md)
 
