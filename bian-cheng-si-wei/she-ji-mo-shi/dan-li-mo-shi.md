@@ -108,9 +108,41 @@ public static final `Singleton singleton = new Singleton();`
 
 `}`
 
-
-
 五:枚举方式
+
+《Java与模式》中，作者这样写道，使用枚举来实现单实例控制会更加简洁，而且无偿地提供了序列化机制，并由JVM从根本上提供保障，绝对防止多次实例化，是更简洁、高效、安全的实现单例的方式。
+
+六:使用容器 
+
+
+
+```
+public class SingletonManger{
+
+private static Map<String,Object> objMap = new HashMap<String,Object>();
+
+private SingleManger(){
+}
+
+public static getInstatnce(String key){
+   return objMap.get(key);
+}
+}
+```
+
+
+
+这种事用SingletonManager 将
+
+**多种单例类统一管理**
+
+，在使用时根据key获取对象对应类型的对象。这种方式使得我们可以管理多种类型的单例，并且在使用时可以通过统一的接口进行获取操作，降低了用户的使用成本，也对用户隐藏了具体实现，降低了耦合度。
+
+引用资料:
+
+https://blog.csdn.net/qq\_34337272/article/details/80455972\#24-%E6%87%92%E6%B1%89%E5%BC%8F%E7%99%BB%E8%AE%B0%E5%BC%8F%E9%9D%99%E6%80%81%E5%86%85%E9%83%A8%E7%B1%BB%E6%96%B9%E5%BC%8F
+
+
 
 
 
