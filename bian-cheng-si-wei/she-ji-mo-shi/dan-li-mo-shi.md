@@ -53,7 +53,7 @@ if \(singleton == null\){
 
 说明:这个保证了线程安全，但是每次访问都要synchronized来保证线程安全，所以浪费性能.
 
-三:
+#### 三: 通过对方法加锁来创建,比上面的性能更加好
 
 `public class Singleton {`
 
