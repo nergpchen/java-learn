@@ -57,7 +57,7 @@ if \(singleton == null\){
 
 `public class Singleton {`
 
-`private static  Singleton  singleton;`
+`private  voliate static  Singleton  singleton;`
 
 `private Singleton(){`
 
@@ -65,19 +65,19 @@ if \(singleton == null\){
 
 `public static Singleton getInstance(){`
 
-if \(singleton == null\){
+`if (singleton == null){`
 
-   synchronized\(Singleton.class\){
+`synchronized(Singleton.class){`
 
-if \(singleton == null\){
+`if (singleton == null){`
 
-`singleton = new Singleton()`
+      `singleton = new Singleton()`
 
-    }
-
+```
 }
+```
 
-`singleton = new Singleton()`  
+}  
 }
 
 `return singleton;`
