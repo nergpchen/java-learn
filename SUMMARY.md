@@ -12,7 +12,7 @@
 * [述线程，程序、进程的基本概念。以及他们之间关系是什么？](shu-xian-cheng-ff0c-cheng-xu-3001-jin-cheng-de-ji-ben-gai-nian-3002-yi-ji-ta-men-zhi-jian-guan-xi-shi-shi-yao-ff1f.md)
 * [线程有哪些基本状态？这些状态是如何定义的?](xian-cheng-you-na-xie-ji-ben-zhuang-tai-ff1f-zhe-xie-zhuang-tai-shi-ru-he-ding-yi-76843f.md)
 * [字符型常量和字符串常量的区别](zi-fu-xing-chang-liang-he-zi-fu-chuan-chang-liang-de-qu-bie.md)
-* JVM
+* [JVM](jvm.md)
   * [堆](dui.md)
   * [方法区](fang-fa-qu.md)
   * [运行时常量](yun-xing-shi-chang-liang.md)
@@ -121,4 +121,8 @@
 
 * [编程前思考的问题](bian-cheng-si-wei/bian-cheng-qian-si-kao-de-wen-ti.md)
 * [提高效率工具](bian-cheng-si-wei/ti-gao-xiao-lv-gong-ju.md)
+
+## 设计模式
+
+* 单例模式
 
