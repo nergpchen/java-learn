@@ -90,7 +90,11 @@ if \(singleton == null\){
 
 `public class Singleton {`
 
-`private static  Singleton  singleton;`
+`private static class SingletonHolder {`
+
+  public static `Singleton singleton = new Singleton();`
+
+}
 
 `private Singleton(){`
 
