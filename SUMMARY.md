@@ -4,6 +4,7 @@
 
 * [Introduction](README.md)
 * [java基础知识](chapter1.md)
+  * [字节码](chapter1/zi-jie-ma.md)
 * [String 和 StringBuffer、StringBuilder 的区别是什么？String 为什么是不可变的？](string-he-stringbuffer-stringbuilder-de-qu-bie-shi-shi-yao-ff1f-string-wei-shi-yao-shi-bu-ke-bian-de-ff1f.md)
 * [自动装箱和拆箱](zi-dong-zhuang-xiang-he-chai-xiang.md)
 * [final关键字](finalguan-jian-zi.md)
@@ -114,6 +115,7 @@
   * [二叉树](shu-ju-jie-gou/shu/er-cha-shu.md)
 * [学习资料](shu-ju-jie-gou/xue-xi-zi-liao.md)
 * [优先队列](shu-ju-jie-gou/you-xian-dui-lie.md)
+* [二叉堆](shu-ju-jie-gou/dui-heap.md)
 
 ## 编程思维
 
