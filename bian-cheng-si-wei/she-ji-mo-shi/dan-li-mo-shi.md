@@ -14,9 +14,9 @@
 
 ##### `public class Singleton {`
 
-` private static  Singleton  singleton = new Singleton();`
+`private static  Singleton  singleton = new Singleton();`
 
-` private Singleton(){`
+`private Singleton(){`
 
 `}`
 
@@ -32,13 +32,13 @@
 
 ##### `public class Singleton {`
 
-` private static  Singleton  singleton;`
+`private static  Singleton  singleton;`
 
-` private Singleton(){`
+`private Singleton(){`
 
 `}`
 
-`public static Singleton getInstance(){`
+`public static `synchronized `Singleton getInstance(){`
 
 if \(singleton == null\){
 
@@ -50,10 +50,4 @@ if \(singleton == null\){
 `}`
 
 `}`
-
-
-
-
-
-
 
