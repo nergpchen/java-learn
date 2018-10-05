@@ -92,7 +92,7 @@ if \(singleton == null\){
 
 `private static class SingletonHolder {`
 
-public static `Singleton singleton = new Singleton();`
+public static final `Singleton singleton = new Singleton();`
 
 }
 
@@ -107,4 +107,10 @@ public static `Singleton singleton = new Singleton();`
 `}`
 
 `}`
+
+
+
+五:枚举方式
+
+
 
