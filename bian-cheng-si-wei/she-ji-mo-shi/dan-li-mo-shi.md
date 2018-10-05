@@ -86,3 +86,26 @@ if \(singleton == null\){
 
 `}`
 
+#### 四:通过静态内部类来实现单例
+
+`public class Singleton {`
+
+`private static  Singleton  singleton;`
+
+`private Singleton(){`
+
+`}`
+
+`public static`synchronized `Singleton getInstance(){`
+
+if \(singleton == null\){
+
+`singleton = new Singleton()`  
+}
+
+`return singleton;`
+
+`}`
+
+`}`
+
