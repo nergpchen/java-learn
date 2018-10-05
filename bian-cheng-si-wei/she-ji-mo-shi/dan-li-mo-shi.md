@@ -92,7 +92,7 @@ if \(singleton == null\){
 
 `private static class SingletonHolder {`
 
-  public static `Singleton singleton = new Singleton();`
+public static `Singleton singleton = new Singleton();`
 
 }
 
@@ -100,14 +100,9 @@ if \(singleton == null\){
 
 `}`
 
-`public static`synchronized `Singleton getInstance(){`
+`public static` `Singleton getInstance(){`
 
-if \(singleton == null\){
-
-`singleton = new Singleton()`  
-}
-
-`return singleton;`
+`return SingletonHolder.singleton;`
 
 `}`
 
