@@ -12,7 +12,7 @@
 
 ##### 一：类加载的时候实现
 
-##### `public class Singleton {`
+`public class Singleton {`
 
 `private static  Singleton  singleton = new Singleton();`
 
@@ -28,9 +28,9 @@
 
 `}`
 
-二：类在使用的时候创建
+#### 二：类在使用的时候创建
 
-##### `public class Singleton {`
+`public class Singleton {`
 
 `private static  Singleton  singleton;`
 
@@ -38,9 +38,44 @@
 
 `}`
 
-`public static `synchronized `Singleton getInstance(){`
+`public static`synchronized `Singleton getInstance(){`
 
 if \(singleton == null\){
+
+`singleton = new Singleton()`  
+}
+
+`return singleton;`
+
+`}`
+
+`}`
+
+说明:这个保证了线程安全，但是每次访问都要synchronized来保证线程安全，所以浪费性能.
+
+三:
+
+`public class Singleton {`
+
+`private static  Singleton  singleton;`
+
+`private Singleton(){`
+
+`}`
+
+`public static Singleton getInstance(){`
+
+if \(singleton == null\){
+
+   synchronized\(Singleton.class\){
+
+if \(singleton == null\){
+
+`singleton = new Singleton()`
+
+    }
+
+}
 
 `singleton = new Singleton()`  
 }
