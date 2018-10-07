@@ -124,5 +124,7 @@
 * [提高效率工具](bian-cheng-si-wei/ti-gao-xiao-lv-gong-ju.md)
 * [设计模式](bian-cheng-si-wei/she-ji-mo-shi.md)
   * [单例模式](bian-cheng-si-wei/she-ji-mo-shi/dan-li-mo-shi.md)
+  * [工厂模式](bian-cheng-si-wei/she-ji-mo-shi/gong-chang-mo-shi.md)
+  * [建造者模式](bian-cheng-si-wei/she-ji-mo-shi/jian-zao-zhe-mo-shi.md)
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 
