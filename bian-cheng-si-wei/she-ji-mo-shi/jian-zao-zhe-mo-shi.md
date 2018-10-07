@@ -1,6 +1,6 @@
 #### 一.什么是建造者模式
 
- **建造者模式（Builder Pattern）** 又名生成器模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。
+**建造者模式（Builder Pattern）** 又名生成器模式，是一种对象构建模式。它可以将复杂对象的建造过程抽象出来（抽象类别），使这个抽象过程的不同实现方法可以构造出不同表现（属性）的对象。
 
 **建造者模式** 是一步一步创建一个复杂的对象，它允许用户只通过指定复杂对象的类型和内容就可以构建它们，用户不需要知道内部的具体构建细节。
 
@@ -22,8 +22,6 @@
 
 **2\) 产品内部变化很复杂的情况：** 如果产品的内部变化复杂，可能会导致需要定义很多具体建造者类来实现这种变化，导致系统变得很庞大。
 
-
-
 #### 四.实现
 
 建造者模式总共有4个角色
@@ -38,7 +36,6 @@ Directeor:指挥者,创建产品，隔离了客户端和对象d生产过程，�
 builder：构建接口
 
 ```
-
 public interface Builder {
 
 
@@ -47,7 +44,6 @@ void build_CPU();
 void build_mainboard();
 
  }
- 
 ```
 
 实现构建接口
@@ -56,12 +52,34 @@ void build_mainboard();
 public class ConreatorBuilder{
 private Product product = new product();
  public void build_CPU(){
- 
+
  }
 
  public void build_mainboard(){
  }
+
+ }
+```
+
+指导者
+
+
+
+```
+ public class ProductDirector
+ private Builder builder ;
  
+ ProductDirector(Builder builder){
+  builder = builder
+ } 
+  
+  public Product newInstance(){
+     builder.
+     builder.
+     return builder.getInstance()
+ 
+  }
+
  }
 ```
 
