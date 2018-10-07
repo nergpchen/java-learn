@@ -83,7 +83,7 @@ private Product product = new product();
 
 总结:
 
-构建者用于构建相对比较复杂的对象,使用者只需要通过Director对象来获取对象
+构建者用于构建相对比较复杂的对象,使用者只需要通过Director角色来生成对象.
 
 
 
