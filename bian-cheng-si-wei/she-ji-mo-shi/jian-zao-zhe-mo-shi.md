@@ -63,25 +63,27 @@ private Product product = new product();
 
 指导者
 
-
-
 ```
  public class ProductDirector
  private Builder builder ;
- 
+
  ProductDirector(Builder builder){
   builder = builder
  } 
-  
+
   public Product newInstance(){
      builder.
      builder.
      return builder.getInstance()
- 
+
   }
 
  }
 ```
+
+总结:
+
+构建者用于构建相对比较复杂的对象,使用者只需要通过Director对象来获取对象
 
 
 
