@@ -132,4 +132,5 @@
 * [单例模式](bian-cheng-si-wei/she-ji-mo-shi/dan-li-mo-shi.md)
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 * [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
+* 单一职责原则
 
