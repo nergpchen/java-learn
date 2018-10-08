@@ -128,6 +128,8 @@
   * [原型模式-待写](bian-cheng-si-wei/she-ji-mo-shi/yuan-xing-mo-5f0f-dai-xie.md)
   * [结构性模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi.md)
     * [适配器模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/shi-pei-qi-mo-shi.md)
+    * [桥接模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/qiao-jie-mo-shi.md)
 * [单例模式](bian-cheng-si-wei/she-ji-mo-shi/dan-li-mo-shi.md)
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
+* [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
 
