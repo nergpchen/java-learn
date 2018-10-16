@@ -131,6 +131,7 @@
     * [适配器模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/shi-pei-qi-mo-shi.md)
     * [桥接模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/qiao-jie-mo-shi.md)
     * [代理模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/dai-li-mo-shi.md)
+    * [组合模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/zu-he-mo-shi.md)
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 * [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
 * 单一职责原则
