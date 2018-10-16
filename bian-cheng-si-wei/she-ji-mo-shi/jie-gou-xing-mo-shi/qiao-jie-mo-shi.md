@@ -18,13 +18,129 @@
 
 #### 桥接模式角色
 
-桥接模式适用场景
+1.Client 调用端
 
-1. 如果一个系统需要在构件的抽象化角色和具体化角色之间增加更多的灵活性，避免在两个层次之间建立静态的联系。
+这是Bridge模式的调用者。
 
+2.抽象类（Abstraction）
+
+抽象类接口（接口这货抽象类）维护队行为实现（implementation）的引用。它的角色就是桥接类。
+
+3.Refined Abstraction
+
+这是Abstraction的子类。
+
+4.Implementor
+
+行为实现类接口（Abstraction接口定义了基于Implementor接口的更高层次的操作）
+
+5.ConcreteImplementor
+
+Implementor的子类
+
+#### 桥接模式适用场景
+
+1. #### 如果一个系统需要在构件的抽象化角色和具体化角色之间增加更多的灵活性，避免在两个层次之间建立静态的联系。
 2. 设计要求实现化角色的任何改变不应当影响客户端，或者说实现化角色的改变对客户端是完全透明的。
+
 3. 一个构件有多于一个的抽象化角色和实现化角色，系统需要它们之间进行动态耦合。
 4. 虽然在系统中使用继承是没有问题的，但是由于抽象化角色和具体化角色需要独立变化，设计要求需要独立管理这两者。
+
+实现代码:
+
+1.接口
+
+```
+public interface Implementor {
+
+public  void
+ operation();
+
+ }
+```
+
+下面定义Implementor接口的两个实现类：
+
+```
+1
+public class ConcreateImplementorA implements Implementor {
+
+@Override public void operation() {
+
+         System.out.println("this is concreteImplementorA's operation..."
+);
+
+
+    }
+
+ }
+```
+
+```
+public class ConcreateImplementorB  implements
+ Implementor {
+
+@Override
+public void operation() {
+
+
+         System.out.println("this is concreteImplementorB's operation..."
+);
+
+
+    }
+
+ }
+```
+
+下面定义桥接类Abstraction，其中有对Implementor接口的引用：
+
+[![](https://common.cnblogs.com/images/copycode.gif "复制代码")](javascript:void%280%29;)
+
+```
+ 1
+public abstract class Abstraction {
+
+private Implementor implementor;
+
+public  Implementor getImplementor() {
+
+return implementor;
+
+}
+
+public void
+ setImplementor(Implementor implementor) {
+
+this .implementor = implementor;
+}
+protected  void operation(){
+
+        implementor.operation();
+
+
+    }
+
+ }
+
+```
+
+下面是Abstraction类的子类RefinedAbstraction：
+
+```
+1
+public class RefinedAbstraction  extends Abstraction {
+
+@Override
+protected void
+ operation() {
+super.getImplementor().operation();
+
+}
+ }
+```
+
+案例
 
 引用:
 

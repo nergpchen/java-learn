@@ -125,7 +125,7 @@
 * [设计模式-创建对象](bian-cheng-si-wei/she-ji-mo-shi.md)
   * [工厂模式](bian-cheng-si-wei/she-ji-mo-shi/gong-chang-mo-shi.md)
   * [建造者模式](bian-cheng-si-wei/she-ji-mo-shi/jian-zao-zhe-mo-shi.md)
-  * [原型模式-待写](bian-cheng-si-wei/she-ji-mo-shi/yuan-xing-mo-5f0f-dai-xie.md)
+  * [原型模式](bian-cheng-si-wei/she-ji-mo-shi/yuan-xing-mo-5f0f-dai-xie.md)
   * [结构性模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi.md)
     * [适配器模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/shi-pei-qi-mo-shi.md)
     * [桥接模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/qiao-jie-mo-shi.md)
