@@ -117,6 +117,10 @@
 * [学习资料](shu-ju-jie-gou/xue-xi-zi-liao.md)
 * [优先队列](shu-ju-jie-gou/you-xian-dui-lie.md)
 * [二叉堆](shu-ju-jie-gou/dui-heap.md)
+* 算法
+  * [冒泡排序](shu-ju-jie-gou/mao-pao-pai-xu.md)
+  * [快速排序](shu-ju-jie-gou/kuai-su-pai-xu.md)
+  * 直接插入paix
 
 ## 编程思维
 
@@ -141,8 +145,4 @@
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 * [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
 * 单一职责原则
-
-## 算法
-
-* 排序算法
 
