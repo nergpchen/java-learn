@@ -120,7 +120,13 @@
 * 算法
   * [冒泡排序](shu-ju-jie-gou/mao-pao-pai-xu.md)
   * [快速排序](shu-ju-jie-gou/kuai-su-pai-xu.md)
-  * 直接插入paix
+  * [直接插入排序](shu-ju-jie-gou/zhi-jie-cha-ru-paix.md)
+  * [希尔排序](shu-ju-jie-gou/xi-er-pai-xu.md)
+  * [选择排序](shu-ju-jie-gou/xuan-ze-pai-xu.md)
+  * 归并排序
+  * 基数排序
+  * 堆排序
+  * [总结](shu-ju-jie-gou/zong-jie.md)
 
 ## 编程思维
 
