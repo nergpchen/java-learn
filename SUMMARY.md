@@ -47,6 +47,7 @@
 ## 多线程
 
 * [多线程基本知识](duo-xian-cheng/duo-xian-cheng.md)
+  * [Runnable接口和Callable接口的区别](duo-xian-cheng/duo-xian-cheng/runnablejie-kou-he-callable-jie-kou-de-qu-bie.md)
 * [使用多线程方式](duo-xian-cheng/shi-yong-duo-xian-cheng-fang-shi.md)
 * [synchronized关键字学习](duo-xian-cheng/synchronizedguan-jian-zi-xue-xi.md)
 * [volatile](duo-xian-cheng/volatile.md)
@@ -117,7 +118,7 @@
 * [学习资料](shu-ju-jie-gou/xue-xi-zi-liao.md)
 * [优先队列](shu-ju-jie-gou/you-xian-dui-lie.md)
 * [二叉堆](shu-ju-jie-gou/dui-heap.md)
-* 算法
+* [算法](shu-ju-jie-gou/suan-fa.md)
   * [冒泡排序](shu-ju-jie-gou/mao-pao-pai-xu.md)
   * [快速排序](shu-ju-jie-gou/kuai-su-pai-xu.md)
   * [直接插入排序](shu-ju-jie-gou/zhi-jie-cha-ru-paix.md)
