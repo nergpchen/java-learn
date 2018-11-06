@@ -23,6 +23,8 @@
   * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
 * [学习资料](xue-xi-zi-liao.md)
 * [类加载机制](lei-jia-zai-ji-zhi.md)
+* [java垃圾回收](javala-ji-hui-shou.md)
+* [java引用分类](javayin-yong-fen-lei.md)
 
 ## JavaIO
 
