@@ -55,6 +55,8 @@
 
 * [多线程基本知识](duo-xian-cheng/duo-xian-cheng.md)
   * [Runnable接口和Callable接口的区别](duo-xian-cheng/duo-xian-cheng/runnablejie-kou-he-callable-jie-kou-de-qu-bie.md)
+  * [多线程的代价](duo-xian-cheng/duo-xian-cheng/duo-xian-cheng-de-dai-jia.md)
+    * 1.上下文开销
 * [使用多线程方式](duo-xian-cheng/shi-yong-duo-xian-cheng-fang-shi.md)
 * [synchronized关键字学习](duo-xian-cheng/synchronizedguan-jian-zi-xue-xi.md)
 * [volatile](duo-xian-cheng/volatile.md)
@@ -99,6 +101,7 @@
   * [TransactionStatus](springxue-xi/springshi-wu-xue-xi/transactionstatus.md)
   * [Sping声明式事务管理](springxue-xi/springshi-wu-xue-xi/spingsheng-ming-shi-shi-wu-guan-li.md)
 * [Bean作用域](springxue-xi/beanzuo-yong-yu.md)
+* [Spring生命周期](springxue-xi/springsheng-ming-zhou-qi.md)
 
 ## 学习资料
 
