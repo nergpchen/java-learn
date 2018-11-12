@@ -14,12 +14,9 @@ Volatile关键词就是告诉jvm，这个变量不稳定，需要直接从主存
 
 ### 四 synchronized关键字和volatile关键字比较 {#四-synchronized关键字和volatile关键字比较}
 
-* **volatile关键字**
-  是线程同步的
-  **轻量级实现**
-  ，所以**volatile性能肯定比synchronized关键字要好**。
+* **volatile关键字**是线程同步的**轻量级实现**，所以**volatile性能肯定比synchronized关键字要好**。
 * 但是**volatile关键字只能用于变量而synchronized关键字可以修饰方法以及代码块**。
-  synchronized关键字在JavaSE1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的偏向锁和轻量级锁以及其它各种优化之后执行效率有了显著提升，
+* synchronized关键字在JavaSE1.6之后进行了主要包括为了减少获得锁和释放锁带来的性能消耗而引入的偏向锁和轻量级锁以及其它各种优化之后执行效率有了显著提升，
   **实际开发中使用synchronized关键字还是更多一些**
 * **多线程访问volatile关键字不会发生阻塞，而synchronized关键字可能会发生阻塞**
 * **volatile关键字能保证数据的可见性，但不能保证数据的原子性。synchronized关键字两者都能保证。**
