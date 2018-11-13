@@ -21,7 +21,7 @@
   * [方法区](fang-fa-qu.md)
   * [运行时常量](yun-xing-shi-chang-liang.md)
   * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
-  * JVM调优
+  * [JVM调优](jvmdiao-you.md)
 * [学习资料](xue-xi-zi-liao.md)
 * [类加载机制](lei-jia-zai-ji-zhi.md)
 * [java垃圾回收](javala-ji-hui-shou.md)
@@ -74,6 +74,8 @@
 * [阻塞队列](duo-xian-cheng/zu-sai-dui-lie.md)
   * [阻塞队列实现原理-ArrayBlockQueue](duo-xian-cheng/zu-sai-dui-lie/zu-sai-dui-lie-shi-xian-yuan-7406-arrayblockqueue.md)
 * [学习资料](duo-xian-cheng/xue-xi-zi-liao.md)
+* [可重入性](duo-xian-cheng/ke-zhong-ru-xing.md)
+* [ThreadLocal](duo-xian-cheng/threadlocal.md)
 
 ## Spring学习
 
