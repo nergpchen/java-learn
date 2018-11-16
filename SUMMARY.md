@@ -76,6 +76,7 @@
 * [学习资料](duo-xian-cheng/xue-xi-zi-liao.md)
 * [可重入性](duo-xian-cheng/ke-zhong-ru-xing.md)
 * [ThreadLocal](duo-xian-cheng/threadlocal.md)
+* [死锁](duo-xian-cheng/si-suo.md)
 
 ## Spring学习
 
