@@ -1,10 +1,16 @@
 读写锁 介绍：
 
-读写锁维护了两个锁，一个是读操作相关的锁也成为共享锁，一个是写操作相关的锁 也称为排他锁。通过分离读锁和写锁，其并发性比一般排他锁有了很大提升。
+在程序中，读写是非常常见的一种操作 ,如果在读的时候是不会有安全问题的 ，所以在JDK中提供了一种读写锁ReentrantReadWriteLock，使用它可以加快运行效率。
 
-ReadWriteLock接口的实现类-ReentrantReadWriteLock读写锁。
+读写锁表示两个锁，一个是读操作相关的锁，称为**共享锁**；另一个是写操作相关的锁，称为**排他锁**。我把这两个操作理解为三句话：
 
-多个读锁之间不互斥，读锁与写锁互斥，写锁与写锁互斥（只要出现写操作的过程就是互斥的。）。
+1、读和读之间不互斥，因为读操作不会有线程安全问题
+
+2、写和写之间互斥，避免一个写操作影响另外一个写操作，引发线程安全问题
+
+3、读和写之间互斥，避免读操作的时候写操作修改了内容，引发线程安全问题
+
+总结起来就是，**多个Thread可以同时进行读取操作，但是同一时刻只允许一个Thread进行写入操作**。
 
 
 
@@ -41,15 +47,15 @@ private
 new
  ReentrantReadWriteLock();
 
-    
+
 public
 void
 read
 () {
-        
+
 try
  {
-            
+
 try
  {
                 lock.readLock().lock();
@@ -70,17 +76,13 @@ finally
         } 
 catch
  (InterruptedException e) {
-            
+
 // TODO Auto-generated catch block
 
             e.printStackTrace();
         }
     }
-
 ```
-
-  
-
 
 
 

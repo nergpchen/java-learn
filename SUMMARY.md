@@ -77,6 +77,9 @@
 * [可重入性](duo-xian-cheng/ke-zhong-ru-xing.md)
 * [ThreadLocal](duo-xian-cheng/threadlocal.md)
 * [死锁](duo-xian-cheng/si-suo.md)
+* [中断机制](duo-xian-cheng/zhong-duan-ji-zhi.md)
+* ReentrantLock
+* [JMM](duo-xian-cheng/jmm.md)
 
 ## Spring学习
 
