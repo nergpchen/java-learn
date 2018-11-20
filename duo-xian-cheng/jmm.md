@@ -1,10 +1,12 @@
 JMM介绍
 
+核心概念： 原子性、可见性、重排序、缓存、线程优化、指令重排序、数据安全
+
 JMM Java内存模型,是JVM平台提供给多线程环境下的内存可见、是否可以重排序等无关平台的统一的保证。
 
 多线程开发需要注意3个问题：
 
- 原子性、可见性、重排序
+原子性、可见性、重排序
 
 原子性是指线程在进行操作的时候是否会受到其他线程的干扰，比如i++操作,是一个复合的操作，如果不能保证原子性，会导致数据安全的问题。
 
@@ -34,9 +36,5 @@ volatile还有一个作用就是**局部阻止重排序的发生**，对volatile
 
 在保证可见性方面，锁（包括显式锁、对象锁）以及对原子变量的读写都可以确保变量的可见性。但是实现方式略有不同，例如同步锁保证得到锁时从内存里重新读入数据刷新缓存，释放锁时将数据写回内存以保数据可见，而volatile变量干脆都是读写内存。
 
-
-
-引用:http://www.codeceo.com/article/javamemorymodel.html
-
-
+引用:[http://www.codeceo.com/article/javamemorymodel.html](http://www.codeceo.com/article/javamemorymodel.html)
 
