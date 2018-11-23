@@ -80,6 +80,9 @@
 * [中断机制](duo-xian-cheng/zhong-duan-ji-zhi.md)
 * [ReentrantLock](duo-xian-cheng/reentrantlock.md)
 * [JMM](duo-xian-cheng/jmm.md)
+* [并发包常用类](duo-xian-cheng/bing-fa-bao-chang-yong-lei.md)
+  * CyclicBarrier
+  * [CountDownLatch](duo-xian-cheng/bing-fa-bao-chang-yong-lei/countdownlatch.md)
 * [CountDown](duo-xian-cheng/countdown.md)
 
 ## Spring学习
