@@ -78,8 +78,9 @@
 * [ThreadLocal](duo-xian-cheng/threadlocal.md)
 * [死锁](duo-xian-cheng/si-suo.md)
 * [中断机制](duo-xian-cheng/zhong-duan-ji-zhi.md)
-* ReentrantLock
+* [ReentrantLock](duo-xian-cheng/reentrantlock.md)
 * [JMM](duo-xian-cheng/jmm.md)
+* [CountDown](duo-xian-cheng/countdown.md)
 
 ## Spring学习
 
