@@ -81,8 +81,9 @@
 * [ReentrantLock](duo-xian-cheng/reentrantlock.md)
 * [JMM](duo-xian-cheng/jmm.md)
 * [并发包常用类](duo-xian-cheng/bing-fa-bao-chang-yong-lei.md)
-  * CyclicBarrier
+  * [CyclicBarrier](duo-xian-cheng/bing-fa-bao-chang-yong-lei/cyclicbarrier.md)
   * [CountDownLatch](duo-xian-cheng/bing-fa-bao-chang-yong-lei/countdownlatch.md)
+  * [Callable、Future和FutureTask](duo-xian-cheng/bing-fa-bao-chang-yong-lei/callablefuturehe-futuretask.md)
 * [CountDown](duo-xian-cheng/countdown.md)
 
 ## Spring学习
