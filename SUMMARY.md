@@ -53,6 +53,8 @@
 * [ArrayList学习](javaji-he-kuang-jia-xue-xi/arraylistxue-xi.md)
 * [框架总结](javaji-he-kuang-jia-xue-xi/kuang-jia-zong-jie.md)
 * [Collection接口](javaji-he-kuang-jia-xue-xi/collectionjie-kou.md)
+* [LinkedList](javaji-he-kuang-jia-xue-xi/linkedlist.md)
+* [fail-fast机制](javaji-he-kuang-jia-xue-xi/fail-fastji-zhi.md)
 
 ## 多线程
 
