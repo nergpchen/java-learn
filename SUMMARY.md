@@ -51,6 +51,8 @@
 * [集合总结](javaji-he-kuang-jia-xue-xi/ji-he-zong-jie.md)
 * [学习资料](javaji-he-kuang-jia-xue-xi/xue-xi-zi-liao.md)
 * [ArrayList学习](javaji-he-kuang-jia-xue-xi/arraylistxue-xi.md)
+* [框架总结](javaji-he-kuang-jia-xue-xi/kuang-jia-zong-jie.md)
+* [Collection接口](javaji-he-kuang-jia-xue-xi/collectionjie-kou.md)
 
 ## 多线程
 
