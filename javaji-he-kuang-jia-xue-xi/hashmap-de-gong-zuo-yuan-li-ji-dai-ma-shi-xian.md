@@ -1,3 +1,7 @@
+#### HashMap介绍:
+
+HashMap是Map接口的实现,是非线程安全，影响HashMap性能有两个因素：初始容量和加载因子.
+
 JDK1.8之前HashMap底层是数组和链表结合在一起使用也就是链表散列。
 
 HashMap通过key的hashCode来计算hash值，当hashCode相同时，通过“拉链法”解决冲突。
@@ -32,22 +36,22 @@ if
  (key == 
 null
 )
-            
+
 return
  putForNullKey(value);
-        
+
 //
 计算key的hash值
 int
  hash = hash(key.hashCode());                  ------(1
 )
-        
+
 //
 计算key hash 值在 table 数组中的位置
 int
  i = indexFor(hash, table.length);             ------(2
 )
-        
+
 //
 从i出开始迭代 e,找到 key 保存的位置
 for
@@ -60,10 +64,10 @@ null
 ; e =
  e.next) {
             Object k;
-            
+
 //
 判断该条链上是否有hash值相同的(key相同)
-            
+
 //
 若存在相同，则直接覆盖value，返回旧value
 if
@@ -82,33 +86,31 @@ if
                 e.recordAccess(
 this
 );
-                
+
 return
  oldValue;     
 //
 返回旧值
             }
         }
-        
+
 //
 修改次数增加1
 
         modCount++
 ;
-        
+
 //
 将key、value添加至i位置处
         addEntry(hash, key, value, i);
-        
+
 return
 null
 ;
     }
 ```
 
-
-
-  2、 在看（1）、（2）处。这里是HashMap的精华所在。首先是hash方法，该方法为一个纯粹的数学计算，就是计算h的hash值。
+2、 在看（1）、（2）处。这里是HashMap的精华所在。首先是hash方法，该方法为一个纯粹的数学计算，就是计算h的hash值。
 
 ```
 static
@@ -127,7 +129,7 @@ int
 >
  12
 );
-        
+
 return
  h ^ (h 
 >
@@ -142,7 +144,9 @@ return
     }
 ```
 
-      我们知道对于HashMap的table而言，数据分布需要均匀（最好每项都只有一个元素，这样就可以直接找到），不能太紧也不能太松，太紧会导致查询速度慢，太松则浪费空间。计算hash值后，怎么才能保证table元素分布均与呢？我们会想到取模，但是由于取模的消耗较大，HashMap是这样处理的：调用indexFor方法。
+```
+  我们知道对于HashMap的table而言，数据分布需要均匀（最好每项都只有一个元素，这样就可以直接找到），不能太紧也不能太松，太紧会导致查询速度慢，太松则浪费空间。计算hash值后，怎么才能保证table元素分布均与呢？我们会想到取模，但是由于取模的消耗较大，HashMap是这样处理的：调用indexFor方法。
+```
 
 ```
 static
@@ -152,7 +156,7 @@ int
  h, 
 int
  length) {
-        
+
 return
  h 
 &
@@ -163,16 +167,29 @@ return
 
 ashMap的底层数组长度总是2的n次方，在构造函数中存在：capacity &lt;&lt;= 1;这样做总是能够保证HashMap的底层数组长度为2的n次方。当length为2的n次方时，h&\(length - 1\)就相当于对length取模，而且速度比直接取模快得多，这是HashMap在速度上的一个优化。至于为什么是2的n次方下面解释。
 
-      我们回到indexFor方法，该方法仅有一条语句：h&\(length - 1\)，这句话除了上面的取模运算外还有一个非常重要的责任：均匀分布table数据和充分利用空间。
+```
+  我们回到indexFor方法，该方法仅有一条语句：h&\(length - 1\)，这句话除了上面的取模运算外还有一个非常重要的责任：均匀分布table数据和充分利用空间。
+```
 
 所以说当length = 2^n时，不同的hash值发生碰撞的概率比较小，这样就会使得数据在table数组中分布较均匀，查询速度也较快。
 
-      这里我们再来复习put的流程：当我们想一个HashMap中添加一对key-value时，系统首先会计算key的hash值，然后根据hash值确认在table中存储的位置。若该位置没有元素，则直接插入。否则迭代该处元素链表并依此比较其key的hash值。如果两个hash值相等且key值相等\(e.hash == hash && \(\(k = e.key\) == key \|\| key.equals\(k\)\)\),则用新的Entry的value覆盖原来节点的value。如果两个hash值相等但key值不等 ，则将该节点插入该链表的链头。具体的实现过程见addEntry方法，如下：
-
-  
-
+```
+  这里我们再来复习put的流程：当我们想一个HashMap中添加一对key-value时，系统首先会计算key的hash值，然后根据hash值确认在table中存储的位置。若该位置没有元素，则直接插入。否则迭代该处元素链表并依此比较其key的hash值。如果两个hash值相等且key值相等\(e.hash == hash && \(\(k = e.key\) == key \|\| key.equals\(k\)\)\),则用新的Entry的value覆盖原来节点的value。如果两个hash值相等但key值不等 ，则将该节点插入该链表的链头。具体的实现过程见addEntry方法，如下：
+```
 
 **二、扩容问题。**
 
-      随着HashMap中元素的数量越来越多，发生碰撞的概率就越来越大，所产生的链表长度就会越来越长，这样势必会影响HashMap的速度，为了保证HashMap的效率，系统必须要在某个临界点进行扩容处理。该临界点在当HashMap中元素的数量等于table数组长度\*加载因子。但是扩容是一个非常耗时的过程，因为它需要重新计算这些数据在新table数组中的位置并进行复制处理。所以如果我们已经预知HashMap中元素的个数，那么预设元素的个数能够有效的提高HashMap的性能。
+当HashMap长度达到一个临界点的时候，必须扩容，扩容的大小是oldCapacity&lt;&lt;1,左移一位，就是新空间为旧空间的两倍.
+
+这个时候还要重新计算每个元素的位置.因为元素在hash表中的定位是通过代码: \(n-1\)&hash计算出来的，n表示表的容量,是和表容量相关的，所以需要重新计算.
+
+```
+  随着HashMap中元素的数量越来越多，发生碰撞的概率就越来越大，所产生的链表长度就会越来越长，
+  这样势必会影响HashMap的速度，为了保证HashMap的效率，系统必须要在某个临界点进行扩容处理。
+  该临界点在当HashMap中元素的数量等于table数组长度\*加载因子。
+  但是扩容是一个非常耗时的过程，因为它需要重新计算这些数据在新table数组中的位置并进行复制处理。
+  所以如果我们已经预知HashMap中元素的个数，那么预设元素的个数能够有效的提高HashMap的性能。
+```
+
+
 
