@@ -55,6 +55,7 @@
 * [Collection接口](javaji-he-kuang-jia-xue-xi/collectionjie-kou.md)
 * [LinkedList](javaji-he-kuang-jia-xue-xi/linkedlist.md)
 * [fail-fast机制](javaji-he-kuang-jia-xue-xi/fail-fastji-zhi.md)
+* [TreeMap](javaji-he-kuang-jia-xue-xi/treemap.md)
 
 ## 多线程
 
@@ -70,6 +71,7 @@
   * [Condition接口简介](duo-xian-cheng/lockxue-xi/conditionjie-kou-jian-jie.md)
   * [公平锁与非公平锁](duo-xian-cheng/lockxue-xi/gong-ping-suo-yu-fei-gong-ping-suo.md)
   * [读写锁](duo-xian-cheng/lockxue-xi/du-xie-suo.md)
+  * [ReentrantLock](duo-xian-cheng/lockxue-xi/reentrantlock.md)
 * [线程池](duo-xian-cheng/xian-cheng-chi.md)
   * [线程池排队策略](duo-xian-cheng/xian-cheng-chi/xian-cheng-chi-pai-dui-ce-lve.md)
   * [拒绝策略](duo-xian-cheng/xian-cheng-chi/ju-jue-ce-lve.md)
@@ -82,7 +84,6 @@
 * [ThreadLocal](duo-xian-cheng/threadlocal.md)
 * [死锁](duo-xian-cheng/si-suo.md)
 * [中断机制](duo-xian-cheng/zhong-duan-ji-zhi.md)
-* [ReentrantLock](duo-xian-cheng/reentrantlock.md)
 * [JMM](duo-xian-cheng/jmm.md)
 * [并发包常用类](duo-xian-cheng/bing-fa-bao-chang-yong-lei.md)
   * [CyclicBarrier](duo-xian-cheng/bing-fa-bao-chang-yong-lei/cyclicbarrier.md)
