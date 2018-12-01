@@ -144,6 +144,7 @@
 * [Queue](shu-ju-jie-gou/queue.md)
 * [树](shu-ju-jie-gou/shu.md)
   * [二叉树](shu-ju-jie-gou/shu/er-cha-shu.md)
+  * [红黑树](shu-ju-jie-gou/shu/hong-hei-shu.md)
 * [学习资料](shu-ju-jie-gou/xue-xi-zi-liao.md)
 * [优先队列](shu-ju-jie-gou/you-xian-dui-lie.md)
 * [二叉堆](shu-ju-jie-gou/dui-heap.md)
