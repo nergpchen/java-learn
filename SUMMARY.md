@@ -18,12 +18,12 @@
 * [字符型常量和字符串常量的区别](zi-fu-xing-chang-liang-he-zi-fu-chuan-chang-liang-de-qu-bie.md)
 * [JVM](jvm.md)
   * [堆](dui.md)
+  * [类加载机制](lei-jia-zai-ji-zhi.md)
   * [方法区](fang-fa-qu.md)
   * [运行时常量](yun-xing-shi-chang-liang.md)
   * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
   * [JVM调优](jvmdiao-you.md)
 * [学习资料](xue-xi-zi-liao.md)
-* [类加载机制](lei-jia-zai-ji-zhi.md)
 * [java垃圾回收](javala-ji-hui-shou.md)
 * [java引用分类](javayin-yong-fen-lei.md)
 
@@ -175,11 +175,11 @@
     * [组合模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/zu-he-mo-shi.md)
     * [命令模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/ming-ling-mo-shi.md)
     * [外观模式](bian-cheng-si-wei/she-ji-mo-shi/jie-gou-xing-mo-shi/wai-guan-mo-shi.md)
-  * 对象行为模式
+  * [对象行为模式](bian-cheng-si-wei/she-ji-mo-shi/dui-xiang-xing-wei-mo-shi.md)
     * 观察者模式
     * [备忘录模式](bian-cheng-si-wei/she-ji-mo-shi/bei-wang-lu-mo-shi.md)
     * [策略模式](bian-cheng-si-wei/she-ji-mo-shi/ce-lve-mo-shi.md)
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 * [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
-* 单一职责原则
+* [单一职责原则](bian-cheng-si-wei/dan-yi-zhi-ze-yuan-ze.md)
 

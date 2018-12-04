@@ -1,6 +1,10 @@
 #### 类的加载原理
 
-类的加载过程分为加载、链接和初始化.
+类加载器是把.class文件加载到JVM的方法区，存放类的信息、静态变量、变量、静编译后的代码数据等,然后在堆区创建一个java.lang.Class对象，用来封装类在方法区内的数据结构.
+
+#### 类加载原理
+
+类的加载过程分为加载、链接和初始化..
 
 1.加载：
 
@@ -43,13 +47,15 @@
 
 * 准备
 
-      **准备阶段是正式为类变量分配内存并设置类变量初始值的阶段，这些变量所使用的内存都将在方法区中进行分配。**
+  ```
+  **准备阶段是正式为类变量分配内存并设置类变量初始值的阶段，这些变量所使用的内存都将在方法区中进行分配。**
+  ```
 
 （备注：这时候进行内存分配的仅包括类变量（被static修饰的变量），而不包括实例变量，实例变量将会在对象实例化时随着对象一起分配在Java堆中）
 
 * 解析
 
-   **解析阶段是虚拟机将常量池内的符号引用替换为直接引用的过程。**
+  **解析阶段是虚拟机将常量池内的符号引用替换为直接引用的过程。**
 
 **那么符号引用与直接引用有什么关联呢？**
 
@@ -89,5 +95,5 @@
 
 引用:
 
-[https://mp.weixin.qq.com/s?\_\_biz=MzU4NDQ4MzU5OA==&mid=2247483934&idx=1&sn=f247f9bee4e240f5e7fac25659da3bff&chksm=fd98547fcaefdd6996e1a7046e03f29df9308bdf82ceeffd111112766ffd3187892700f64b40&scene=21\#wechat\_redirect](https://mp.weixin.qq.com/s?__biz=MzU4NDQ4MzU5OA==&mid=2247483934&idx=1&sn=f247f9bee4e240f5e7fac25659da3bff&chksm=fd98547fcaefdd6996e1a7046e03f29df9308bdf82ceeffd111112766ffd3187892700f64b40&scene=21#wechat_redirect)
+[https://mp.weixin.qq.com/s?\_\_biz=MzU4NDQ4MzU5OA==∣=2247483934&idx=1&sn=f247f9bee4e240f5e7fac25659da3bff&chksm=fd98547fcaefdd6996e1a7046e03f29df9308bdf82ceeffd111112766ffd3187892700f64b40&scene=21\#wechat\_redirect](https://mp.weixin.qq.com/s?__biz=MzU4NDQ4MzU5OA==&mid=2247483934&idx=1&sn=f247f9bee4e240f5e7fac25659da3bff&chksm=fd98547fcaefdd6996e1a7046e03f29df9308bdf82ceeffd111112766ffd3187892700f64b40&scene=21#wechat_redirect)
 
