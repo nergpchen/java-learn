@@ -18,13 +18,13 @@
 * [字符型常量和字符串常量的区别](zi-fu-xing-chang-liang-he-zi-fu-chuan-chang-liang-de-qu-bie.md)
 * [JVM](jvm.md)
   * [堆](dui.md)
+  * [java垃圾回收](javala-ji-hui-shou.md)
   * [类加载机制](lei-jia-zai-ji-zhi.md)
   * [方法区](fang-fa-qu.md)
   * [运行时常量](yun-xing-shi-chang-liang.md)
   * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
   * [JVM调优](jvmdiao-you.md)
 * [学习资料](xue-xi-zi-liao.md)
-* [java垃圾回收](javala-ji-hui-shou.md)
 * [java引用分类](javayin-yong-fen-lei.md)
 
 ## JavaIO
