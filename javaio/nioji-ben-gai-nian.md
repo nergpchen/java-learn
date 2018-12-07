@@ -23,51 +23,37 @@ SocketChannel 能通过TCP读写网络中的数据。
 
 ServerSocketChannel可以监听新进来的TCP连接，像Web服务器那样。对每一个新进来的连接都会创建一个SocketChannel。
 
-  
-p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: \#454545}  
-span.s1 {font: 12.0px '.PingFang SC'}  
-span.Apple-tab-span {white-space:pre}  
-
-
 下面是一个使用FileChannel读取数据到Buffer中的示例：
 
-01 RandomAccessFile aFile = **new** RandomAccessFile\("data/nio-data.txt", "rw"\);
+ RandomAccessFile aFile = **new** RandomAccessFile\("data/nio-data.txt", "rw"\);
 
-02 FileChannel inChannel = aFile.getChannel\(\);
+ FileChannel inChannel = aFile.getChannel\(\);
 
-04 ByteBuffer buf = ByteBuffer.allocate\(48\);
-
-05
-
-06**int** bytesRead = inChannel.read\(buf\);
-
-07**while**\(bytesRead != -1\) {
-
-08
-
-09 System.out.println\("Read " + bytesRead\);
-
-10 buf.flip\(\);
-
-11
-
-12**while**\(buf.hasRemaining\(\)\){
-
-13 System.out.print\(\(**char**\) buf.get\(\)\);
-
-14 }
-
-15
-
-16 buf.clear\(\);
-
-17 bytesRead = inChannel.read\(buf\);
-
-18 }
-
-19 aFile.close\(\)
+ ByteBuffer buf = ByteBuffer.allocate\(48\);
 
 
+
+**int** bytesRead = inChannel.read\(buf\);
+
+**while**\(bytesRead != -1\) {
+
+ System.out.println\("Read " + bytesRead\);
+
+ buf.flip\(\);
+
+**while**\(buf.hasRemaining\(\)\){
+
+ System.out.print\(\(**char**\) buf.get\(\)\);
+
+ }
+
+buf.clear\(\);
+
+bytesRead = inChannel.read\(buf\);
+
+}
+
+ aFile.close\(\)
 
 #### Buffer的基本用法
 

@@ -40,6 +40,8 @@
 * [Channel](javaio/channel.md)
 * [NIO学习总结以及NIO新特性介绍](javaio/nioxue-xi-zong-jie-yi-ji-nio-xin-te-xing-jie-shao.md)
 * [Selector学习](javaio/selectorxue-xi.md)
+* [IO常用类](javaio/iochang-yong-lei.md)
+  * [RandomAccessFile](javaio/iochang-yong-lei/randomaccessfile.md)
 
 ## java集合框架学习
 
