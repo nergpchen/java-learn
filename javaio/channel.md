@@ -1,8 +1,6 @@
 **Channel（通道）介绍**
 
-Channel表示连接一个I/O对象，比如硬件设备、文件、网络Socket或者其他的I/O操作，通常来说NIO中的所有IO都是从 Channel（通道） 开始的。
-
-
+Channel表示连接一个I/O对象，比如硬件设备、文件、网络Socket或者其他的I/O操作，通常来说NIO中的所有IO都是从 Channel（通道） 开始的，Channel是线程安全的，支持多线程的操作。
 
 NIO Channel通道和流的区别：
 

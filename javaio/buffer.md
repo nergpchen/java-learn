@@ -1,16 +1,32 @@
 **Buffer\(缓冲区\)介绍:**
 
-1. * Java NIO Buffers用于和NIO Channel交互。 我们从Channel中读取数据到buffers里，从Buffer把数据写入到Channels；
-   * Buffer本质上就是一块内存区；
-   * 一个Buffer有三个属性是必须掌握的，分别是：capacity容量、position位置、limit限制。
-2. **Buffer的常见方法**
+_A container for data of a specific primitive type._
 
-   * Buffer clear\(\)
+_ A buffer is a linear, finite sequence of elements of a specific_
+
+_ primitive type. Aside from its content, the essential properties of a_
+
+_ buffer are its capacity, limit, and position:_
+
+Buffer是基本原始类型的容器,用来存储比如byte、char、int等基本类型的集合，具有线性、有限容量的特点，基本属性包括content、capacity、limit、position.
+
+ capcatiy是集合的容量、limit表示还可以写或者读多少个元素,position是下一个元素读取的位置.一般在初始化的时候,limit=0;position=0.
+
+特点
+
+1.每个buffer都是可读的，但是不一定是可写的，可读的buffer的内容是不会变的.
+
+2.不是线程安全,如果在多线程使用的话，必须加上锁.
+
+3.链式调用
+
+**Buffer的常见方法**
+
+1. * Buffer clear\(\)
    * Buffer flip\(\)
    * Buffer rewind\(\)
    * Buffer position\(int newPosition\)
-
-3. **Buffer的使用方式/方法介绍:**
+2. **Buffer的使用方式/方法介绍:**
 
    1. * 分配缓冲区（Allocating a Buffer）:
 
@@ -53,10 +69,6 @@
       127
       );
       ```
-
-   2. **Buffer常用方法测试**
-
-      说实话，NIO编程真的难，通过后面这个测试例子，你可能才能勉强理解前面说的Buffer方法的作用。
 
 
 
