@@ -27,6 +27,7 @@
 * [学习资料](xue-xi-zi-liao.md)
 * [java引用分类](javayin-yong-fen-lei.md)
 * [高级常用面试题](gao-ji-chang-yong-mian-shi-ti.md)
+  * [基础知识](gao-ji-chang-yong-mian-shi-ti/she-ji-mo-shi.md)
   * [设计模式](gao-ji-chang-yong-mian-shi-ti/she-ji-mo-shi.md)
 
 ## JavaIO
