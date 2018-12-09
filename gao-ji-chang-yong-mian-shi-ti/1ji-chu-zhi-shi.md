@@ -62,7 +62,7 @@
 
 * 为什么bio是阻塞的 nio是非阻塞的 nio是模型是什么样的
 
-* [Java ](http://lib.csdn.net/base/java)io的整体[架构](http://lib.csdn.net/base/architecture)和使用的设计模式
+* [Java ](http://lib.csdn.net/base/java)io的整体[架构](http://lib.csdn.net/base/architecture)和使用的设计模式
 
 * Reactor模型和Proactor模型
 
@@ -108,5 +108,50 @@
 
 * 算法相关：判断能否从数组中找出两个数字和为给定值，随机生成1~10000不重复并放入数组，求数组的子数组的最大和，二分查找算法的实现及其时间复杂计算
 
+一、Java基础
 
+  
+
+
+1.String类为什么是final的。
+
+  
+
+
+2.HashMap的源码，实现原理，底层结构。
+
+  
+
+
+3.反射中，Class.forName和classloader的区别
+
+  
+
+
+4.session和cookie的区别和联系，session的生命周期，多个服务部署时session管理。
+
+  
+
+
+5.Java中的队列都有哪些，有什么区别。
+
+  
+
+
+6.Java的内存模型以及GC算法
+
+  
+
+
+7.Java7、Java8的新特性\(baidu问的,好BT\)
+
+  
+
+
+8.Java数组和链表两种结构的操作效率，在哪些情况下\(从开头开始，从结尾开始，从中间开始\)，哪些操作\(插入，查找，删除\)的效率高
+
+  
+
+
+9.Java内存泄露的问题调查定位：jmap，jstack的使用等等
 
