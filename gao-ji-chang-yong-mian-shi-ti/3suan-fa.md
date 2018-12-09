@@ -38,7 +38,7 @@
 
 * 你觉得你的有点是什么，你的缺点是什么
 
-* [spring](http://lib.csdn.net/base/javaee) mvc的实现原理
+* [spring](http://lib.csdn.net/base/javaee) mvc的实现原理
 
 * netty底层实现，IO模型，ChannelPipeline的实现和原理
 
@@ -53,4 +53,30 @@
 * ActiveMQ、RabbitMQ、Kafka的区别
 
 
+
+1.使用随机算法产生一个数，要求把1-1000W之间这些数全部生成。（考察高效率，解决产生冲突的问题）
+
+  
+
+
+2.两个有序数组的合并排序
+
+  
+
+
+3.一个数组的倒序
+
+  
+
+
+4.计算一个正整数的正平方根
+
+  
+
+
+5.说白了就是常见的那些查找排序算法（排序转载：
+
+[http://mp.weixin.qq.com/s?\_\_biz=MjM5MTAzMTE4Nw==&mid=204838393&idx=2&sn=e9b50c8ef689e2cb6436110a8dc148a3&scene=5\#rd](http://mp.weixin.qq.com/s?__biz=MjM5MTAzMTE4Nw==&mid=204838393&idx=2&sn=e9b50c8ef689e2cb6436110a8dc148a3&scene=5#rd)
+
+）
 

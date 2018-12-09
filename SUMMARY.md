@@ -35,6 +35,7 @@
   * [6.网络通信 ](gao-ji-chang-yong-mian-shi-ti/6wang-luo-tong-xin.md)
   * [7.linux](gao-ji-chang-yong-mian-shi-ti/7linux.md)
   * [8.mysql](gao-ji-chang-yong-mian-shi-ti/8mysql.md)
+  * [9.缓存](gao-ji-chang-yong-mian-shi-ti/9huan-cun.md)
 
 ## JavaIO
 
