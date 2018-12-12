@@ -1,4 +1,4 @@
-什么是原型模式
+#### 什么是原型模式
 
 Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype. （使用原型实例指定将要创建的对象类型，通过复制这个实例创建新的对象。）
 
@@ -38,19 +38,13 @@ Specify the kind of objects to create using a prototypical instance, and create 
 
 通过上面的例子，相信大家对于原型模式有了更进一步的认识，下面我们看看原型模式的几个登场角色。
 
-
-
 3.1 Prototype（抽象原型类）
 
 Product角色负责定义用于复制现有实例来生成新实例的方法。在示例程序中的Product接口就是该角色。
 
-
-
 3.2 ConcretePrototype（具体原型类）
 
 ConcretePrototype角色负责实现复制现有实例并生成新实例的方法。在示例程序中，MessageBox和UnderlinePen都是该角色。
-
-
 
 3.3 Client（客户类/使用者）
 
@@ -68,13 +62,5 @@ Client角色负责使用复制实例的方法生成新的实例。在示例程�
 
 案例:
 
-
-
-
-
-
-
-原文：https://blog.csdn.net/qq\_34337272/article/details/80706444?utm\_source=copy 
-
-
+原文：[https://blog.csdn.net/qq\_34337272/article/details/80706444?utm\_source=copy](https://blog.csdn.net/qq_34337272/article/details/80706444?utm_source=copy)
 
