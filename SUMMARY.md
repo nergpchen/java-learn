@@ -36,6 +36,7 @@
   * [7.linux](gao-ji-chang-yong-mian-shi-ti/7linux.md)
   * [8.mysql](gao-ji-chang-yong-mian-shi-ti/8mysql.md)
   * [9.缓存](gao-ji-chang-yong-mian-shi-ti/9huan-cun.md)
+* [Java动态代理原理](javadong-tai-dai-li-yuan-li.md)
 
 ## JavaIO
 
