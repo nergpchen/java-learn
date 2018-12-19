@@ -2,9 +2,7 @@
 
 快速排序（Quicksort）是对冒泡排序的一种改进，借用了分治的思想，由C. A. R. Hoare在1962年提出。
 
-它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以[递归](http://www.liuhaihua.cn/archives/tag/%e9%80%92%e5%bd%92)进行，以此达到整个数据变成有序序列。
-
-
+它的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据都比另外一部分的所有数据都要小，然后再按此方法对这两部分数据分别进行快速排序，整个排序过程可以[递归](http://www.liuhaihua.cn/archives/tag/递归)进行，以此达到整个数据变成有序序列。
 
 #### 3.2 算法描述
 
@@ -32,15 +30,15 @@ public class FastSort{
         for(int i = 0; i<a.length; i++){
              System.out.println(a[i]);
          }
-        
+
      }
-     
+
      public void sort(int[] a,int low,int high){
          int start = low;
          int end = high;
          int key = a[low];
-         
-         
+
+
          while(end>start){
              //从后往前比较
              while(end>start&&a[end]>=key)  //如果没有比关键值小的，比较下一个，直到有比关键值小的交换位置，然后又从前往后比较
@@ -64,7 +62,7 @@ public class FastSort{
          if(start>low) sort(a,low,start-1);//左边序列。第一个索引位置到关键值索引-1
          if(end<high) sort(a,end+1,high);//右边序列。从关键值索引+1到最后一个
      }
-     
+
 }
 ```
 

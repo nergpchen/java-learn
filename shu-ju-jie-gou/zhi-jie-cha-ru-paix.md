@@ -1,5 +1,9 @@
 介绍
 
+321
+
+231
+
 直接插入排序的基本思想是：将数组中的所有元素依次跟前面已经排好的元素相比较，如果选择的元素比已排序的元素小，则交换，直到全部元素都比较过为止。
 
 算法 描述
@@ -18,43 +22,43 @@
 
 代码
 
-p ublic static void sort\(int\[\] a\) {
+`public static void sort(int[] a) {`
 
-if \(a == null \|\| a.length == 0\) {
+`if (a == null || a.length == 0) {`
 
-return;
+`return;`
 
-}
+`}`
 
-for \(int i = 1; i &lt; a.length; i++\) {
+`for (int i = 1; i < a.length; i++) {`
 
-int j = i - 1;
+`int j = i - 1;`
 
-int temp = a\[i\]; // 先取出待插入数据保存，因为向后移位过程中会把覆盖掉待插入数
+`int temp = a[i]; // 先取出待插入数据保存，因为向后移位过程中会把覆盖掉待插入数`
 
-while \(j &gt;= 0 && a\[j\]&gt; a\[i\]\) { // 如果待是比待插入数据大，就后移
+`while (j >= 0 && a[j]> a[i]) { // 如果待是比待插入数据大，就后移`
 
-a\[j+1\] = a\[j\];
+`a[j+1] = a[j];`
 
-j--;
+`j--;`
 
-}
+`}`
 
-a\[j+1\] = temp; // 找到比待插入数据小的位置，将待插入数据插入
+`a[j+1] = temp; // 找到比待插入数据小的位置，将待插入数据插入`
 
-}
+`}`
 
-}
+`}`
 
-for\(int i=1;i&lt;a.length;i++\){
+`for(int i=1;i<a.length;i++){`
 
-     int j = i-1;
+```
+ int j = i-1;
+```
 
-int temp -=a\[i\];
+`int temp -=a[i];`
 
-while\(j&gt;=0 && a\[j\]&gt;a\[i\[{
-
-   
+`while(j>=0 && a[j]>a[i[{`
 
 }
 
