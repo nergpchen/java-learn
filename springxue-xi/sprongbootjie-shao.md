@@ -4,3 +4,15 @@ SpringBoot是新的开发框架，简化了Spring的相关配置，只需要简�
 
 而SpringBoot内置来Tomcat或者netty;不需要配置xml文件;
 
+SpringBoot是什么？是一个开发框架?
+
+这个框架和Spring框架有什么不同，解决了什么问题?
+
+
+
+
+
+中文指南:https://qbgbook.gitbooks.io/spring-boot-reference-guide-zh/content/
+
+
+
