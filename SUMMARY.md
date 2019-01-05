@@ -24,6 +24,7 @@
   * [运行时常量](yun-xing-shi-chang-liang.md)
   * [创建对象揭秘](chuang-jian-dui-xiang-jie-mi.md)
   * [JVM调优](jvmdiao-you.md)
+  * [java引用学习](javayin-yong-xue-xi.md)
 * [学习资料](xue-xi-zi-liao.md)
 * [java引用分类](javayin-yong-fen-lei.md)
 * [高级常用面试题](gao-ji-chang-yong-mian-shi-ti.md)
@@ -53,6 +54,8 @@
 * [Selector学习](javaio/selectorxue-xi.md)
 * [IO常用类](javaio/iochang-yong-lei.md)
   * [RandomAccessFile](javaio/iochang-yong-lei/randomaccessfile.md)
+* [Redis](javaio/redis.md)
+  * [Redis学习](javaio/redis/redisxue-xi.md)
 
 ## java集合框架学习
 
@@ -104,6 +107,7 @@
   * [Callable、Future和FutureTask](duo-xian-cheng/bing-fa-bao-chang-yong-lei/callablefuturehe-futuretask.md)
 * [CountDown](duo-xian-cheng/countdown.md)
 * [CAS](duo-xian-cheng/cas.md)
+* [AQS学习](duo-xian-cheng/aqsxue-xi.md)
 
 ## Spring学习
 
@@ -145,14 +149,17 @@
 ## Mybatis
 
 * [Mybatis介绍](mybatis/mybatisjie-shao.md)
-  * SqlSessionFactory
-  * SqlSessionTemplate
+  * [SqlSessionFactory](mybatis/mybatisjie-shao/sqlsessionfactory.md)
+  * [SqlSessionTemplate](mybatis/mybatisjie-shao/sqlsessiontemplate.md)
   * [Mybatis缓存](mybatis/mybatisjie-shao/mybatishuan-cun.md)
   * [Execu tor执行器](mybatis/mybatisjie-shao/execu-torzhi-xing-qi.md)
 * [MapperFactoryBean](mybatis/zhu-ru-ying-she-qi.md)
 * [MyBatis-plus框架学习](mybatis/mybatis-pluskuang-jia-xue-xi.md)
 * [学习资料](mybatis/xue-xi-zi-liao.md)
 * [Mybatis面试题](mybatis/mybatismian-shi-ti.md)
+* [Mysql](mybatis/mysql.md)
+  * 分表
+  * [Mysql介绍](mybatis/mysql/mysqljie-shao.md)
 
 ## 数据结构
 
@@ -199,4 +206,5 @@
 * [学习资料](bian-cheng-si-wei/xue-xi-zi-liao.md)
 * [合成复用原则](bian-cheng-si-wei/he-cheng-fu-yong-yuan-ze.md)
 * [单一职责原则](bian-cheng-si-wei/dan-yi-zhi-ze-yuan-ze.md)
+* [性能诊断](bian-cheng-si-wei/xing-neng-zhen-duan.md)
 
