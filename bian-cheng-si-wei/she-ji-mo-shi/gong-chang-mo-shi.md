@@ -68,5 +68,5 @@ public static void main (String[] args) {
 
 五.
 
-引用:http://blog.jobbole.com/109594/
+引用:[http://blog.jobbole.com/109594/](http://blog.jobbole.com/109594/)
 

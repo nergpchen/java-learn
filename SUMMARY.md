@@ -57,6 +57,14 @@
 * [Redis](javaio/redis.md)
   * [Redis学习](javaio/redis/redisxue-xi.md)
 
+## Mysql
+
+* [mysql介绍](mysql/mysqljie-shao.md)
+* [Mysql常用命令](mysql/mysqlchang-yong-ming-ling.md)
+* [Mysql两个重要日志](mysql/mysqlliang-ge-zhong-yao-ri-zhi.md)
+* [Mysql执行流程](mysql/mysqlzhi-xing-liu-cheng.md)
+* [Mysql事务学习](mysql/mysqlshi-wu-xue-xi.md)
+
 ## java集合框架学习
 
 * [List，Set,Map三者的区别及总结](javaji-he-kuang-jia-xue-xi/listsetmapsan-zhe-de-qu-bie-ji-zong-jie.md)
@@ -160,6 +168,7 @@
 * [Mysql](mybatis/mysql.md)
   * 分表
   * [Mysql介绍](mybatis/mysql/mysqljie-shao.md)
+  * [sql基础语法](mybatis/mysql/sqlji-chu-yu-fa.md)
 
 ## 数据结构
 
